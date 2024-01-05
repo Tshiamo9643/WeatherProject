@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+    
+</head>
+<body>
+    <div class="backgroundDiv">
+        
+        <div class="location">
+            <img src="/Images/location-pin.png" alt="Location Pin Image" class="imgLocation" onclick="search()">
+            <input type="text" placeholder="City Name" id="city">
+        </div>
+        
+        <!-- displays today's date -->
+        <div class="week">
+            <h1 class="dateStyle"><b id="day">tue</b> <b id="date">16</b> <b id="months">January</b></h1>
+        </div>
+        <!-- Displays today's weather -->
+        <div class="weather">
+                 
+            <div class="cloudDiv">
+                <div class="imgPosition"><img src="/Images/01n.png" alt="Cloud Icon" id="icon"></div>
+                <div><p class="desc" id="description"></p></div>
+            </div>
+            <div>
+                <div class="tempPosition">
+                    <p class="temperature" id="temp">52</p>
+                </div>
+                <div>
+                    <p class="feelLike">Feels like <b class="avgTemp" id="average">21</b></p>
+                </div>
+            </div>
+            <div>
+                <div class="min_maxTempDiv"><p class="minmaxTemp"><img src="/Images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.png" alt=""><b id="min">21</b>
+                        <img src="/Images/keyboard_arrow_up_FILL0_wght400_GRAD0_opsz24.png" alt="" class="downArrow"><b id="max">29</b>
+                    </p>
+                </div>
+                <div class="humidDiv">
+                    <p>Wind: <b id="wind"></b></p>
+                    <p>Humidity: <b id="humid"></b></p>
+                </div>    
+            </div>  
+        </div>
+        <!-- Display next coming weather data -->
+        <div class="nextWeather">
+            <div>
+                <div><h4 id="day2"></h4></div>
+                <div><img src="" alt="" id="weather_icon2"></div>
+                <div><p id="temp2"></p></div>
+            </div>
+            <div>
+                <div>
+                    <h4 id="day3"></h4>
+                </div>
+                <div><img src="" alt="" id="weather_icon3"></div>
+                <div>
+                    <p id="temp3"></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4 id="day4"></h4>
+                </div>
+                <div><img src="" alt="" id="weather_icon4"></div>
+                <div>
+                    <p id="temp4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Script/website.js"></script>
+</body>
+</html>

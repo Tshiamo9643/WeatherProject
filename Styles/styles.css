@@ -1,0 +1,174 @@
+html, body{
+    background: linear-gradient(to right, #05d3e4, #0e5191);
+    padding: 0;
+}
+body{
+    font-family: sans-serif; 
+}
+.backgroundDiv{
+    background: linear-gradient(to right, #05d3e4, #0e5191);
+    margin-left: 20%;  
+    margin-top: 10%;
+    border-radius: 10px;
+    max-width: 700px;  
+}
+/* A */
+.location{
+    border-radius:10px 10px 0px 0px;
+    display: flex;
+    
+    padding: 20px;
+    padding-left: 5%;
+    background-color: #037591;
+    position: relative;
+}
+.location img{
+    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.imgLocation{
+    padding-top: 0%;
+
+}
+.location p{
+    margin-left: auto;
+}
+.monthStyle{
+    padding-top: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+        
+}
+
+.location div{
+    max-width: 30px;
+    max-height: 30px;
+    background-color: #045f7b;
+    position: relative;
+}
+.location input{
+    background-color: #037591;
+    color: rgb(255, 255, 255);
+    border: transparent;
+    font-size: 25px;
+    margin-left: 6%;
+    
+}
+.location h4{
+    color: white;
+}
+/* B */
+.week {
+    padding: 1%;
+    background-color: #045f7b;
+    padding-left: 5%;
+    
+}
+.week h1{
+    color: white;
+}
+
+/* C */
+.weather{
+    background-color: #037591;
+    display: flex;
+    padding: 10px;
+    padding-left: 5%;
+    margin-bottom: 0;
+}
+.weather div{
+    width: 100%
+}
+.cloudDiv{
+    /* position: relative; */
+}
+.imgPosition{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* position: absolute; */
+}
+.imgPosition img{
+    width: 300%;
+    margin-bottom: 0;
+}
+.desc{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.tempPosition{
+    margin-top: 30%;
+}
+
+.temperature{
+    text-align: center;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+.feelLike{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+}
+.temp{
+    text-align: center;
+    font-size: 800%;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+}
+.min_maxTempDiv{
+    margin-top: 20%;
+}
+.minmaxTemp{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+.humidDiv{
+    margin-top: 50%;
+}
+.windStyle{
+    text-align: center;
+    color: white;
+    margin-top: 50%;
+}
+.humidity{
+    color: white;
+}
+.humidDiv p{
+    text-align: center;
+    color: white;
+}
+/* D */
+.nextWeather{
+    background-color: #037591;
+    display: flex;
+    padding: 10px;
+    padding-left: 5%;
+    justify-content: baseline;  
+}
+.nextWeather div{
+    display: flex;
+    padding: 10px;
+    
+    width: 30%;
+    text-align: center;
+    background-color: #045f7b;
+    /* border-radius: 10px; */
+    margin: 10px;
+}
+@media  and (max-width: 480px) {
+    
+}
+
