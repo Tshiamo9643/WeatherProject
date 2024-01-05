@@ -60,7 +60,7 @@ function search() {
             document.getElementById("max").textContent = `${data.main.temp_max.toFixed(0)}°C`;
             
             document.getElementById("wind").textContent = `${data.wind.speed}KM/H`;
-            document.getElementById("humid").textContent = data.main.humidity;
+            document.getElementById("humid").textContent = `${data.main.humidity}%`;
         })
     
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}`)

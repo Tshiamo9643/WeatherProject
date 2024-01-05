@@ -155,20 +155,25 @@ body{
     background-color: #037591;
     display: flex;
     padding: 10px;
-    padding-left: 5%;
-    justify-content: baseline;  
+    padding-left: 5%;  
+    border-radius: 0 0 10px 10px;
 }
 .nextWeather div{
     display: flex;
-    padding: 10px;
-    
-    width: 30%;
+    max-width: 30%;
     text-align: center;
     background-color: #045f7b;
     /* border-radius: 10px; */
-    margin: 10px;
+    margin: auto;
 }
-@media  and (max-width: 480px) {
-    
+.nextWeather h4{
+    color: white;
+    font-size: larger;
 }
+/* @media and (max-width: 375px) {
+    .backgroundDiv {
+        margin-left: 0;
+        margin-top: 20%;
+    }
+} */
 
