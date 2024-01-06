@@ -71,8 +71,7 @@ function search() {
             const day = date.getDay();
             
             
-            switch (day)
-            {
+            switch (day) {
                 case 0:
                     document.getElementById("day").textContent = `Sunday`;
                     break;
@@ -96,8 +95,7 @@ function search() {
                     break;
             }
             document.getElementById("date").textContent = date.getDate();
-            switch (date.getMonth())
-            {
+            switch (date.getMonth()) {
                 case 0:
                     document.getElementById("months").textContent = `JANUARY`;
                     break;
@@ -134,12 +132,63 @@ function search() {
                 default:
                     document.getElementById("months").textContent = `DECEMBER`;
                     break;
+                            
+            }
+
+        })
+        .then(forecast => {
+            const index2 = 1;
+            forecast.list.forEach(list => {
                 
-                const icon2 = forecastData.list[index].weather[0].icon;
-                document.getElementById(`weather_icon${index + 1}`).src = `https://api.openweathermap.org/img/w/${icon2}.png`;
-                document.getElementById(`temp${index + 1}`).textContent = forecastData[index].main.temp;
-                
-            }})
+                const date2 = new Date(forecast.list.dt_txt);
+                const day2 = date2.getDay();
+                switch (day2)
+                {
+                    case 0:
+                        document.getElementById(`day${index2}`).textContent = `SUN`;
+                        break;
+                    case 1:
+                        document.getElementById(`day${index2}`).textContent = `MON`;
+                        break;
+                    case 2:
+                        document.getElementById(`day${index2}`).textContent = `TUE`;
+                        break;
+                    case 3:
+                        document.getElementById(`day${index2}`).textContent = `WED`;
+                        break;
+                    case 4:
+                        document.getElementById(`day${index2}`).textContent = `THUR`;
+                        break;
+                    case 5:
+                        document.getElementById(`day${index2}`).textContent = `FRI`;
+                        break;
+                    default:
+                        document.getElementById(`day${index2}`).textContent = `SAT`;
+                        break;
+                }
+                if (`day${index2}` === `day2`) {
+                    document.getElementById("weather_icon2").textContent = forecast.list.weather[0].icon;
+                    document.getElementById("temp2").textContent = `${forecast.list.main.temp.toFixed(0)}°C`;
+                }
+                else
+                {
+                    if (`day${index2}` === `day3`)
+                    {
+                        document.getElementById("weather_icon3").textContent = forecast.list.weather[0].icon;
+                        document.getElementById("temp3").textContent = `${forecast.list.main.temp.toFixed(0)}°C`;       
+                    }
+                    else
+                    {
+                        if (`day${index2}` === `day4`)
+                        {
+                            document.getElementById("weather_icon4").textContent = forecast.list.weather[0].icon;
+                            document.getElementById("temp4").textContent = `${forecast.list.main.temp.toFixed(0)}°C`;
+                        }    
+                    }
+                }
+                    
+            });
+        })
            
 }
 
