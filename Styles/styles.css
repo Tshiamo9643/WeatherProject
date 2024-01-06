@@ -7,9 +7,9 @@ body{
 }
 .backgroundDiv{
     background: linear-gradient(to right, #05d3e4, #0e5191);
-   
-    margin-left: 20%;  
-    margin-top: 10%;
+    
+    margin: 20px;
+    margin-left: 20%;
     border-radius: 10px;
     max-width: 700px;  
 }
@@ -17,7 +17,7 @@ body{
 .location{
     border-radius:10px 10px 0px 0px;
     display: flex;
-    
+    margin: auto;  
     padding: 20px;
     padding-left: 5%;
     background-color: #037591;
@@ -25,8 +25,8 @@ body{
 }
 .location img{
     
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     position: absolute;
 }
 .imgLocation{
@@ -130,6 +130,7 @@ body{
 }
 .min_maxTempDiv{
     margin-top: 20%;
+    margin: auto;
 }
 .minmaxTemp{
     text-align: center;
@@ -156,12 +157,27 @@ body{
     background-color: #037591;
     display: flex;
     padding: 10px;
-    padding-left: 5%;  
+    padding-left: 0;  
     border-radius: 0 0 10px 10px;
+    padding-right: 0;
+    margin: auto;
+}
+.day2Div{
+    width: 25%;
+    border-radius: 10px;
+}
+.day3Div{
+    width: 25%;
+    border-radius: 10px;
+}
+.day4Div{
+    width: 25%;
+    border-radius: 10px;
 }
 .nextWeather div{
+    
     display: flex;
-    max-width: 30%;
+    max-width: 100%;
     text-align: center;
     background-color: #045f7b;
     /* border-radius: 10px; */
