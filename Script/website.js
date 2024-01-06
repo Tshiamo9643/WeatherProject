@@ -97,15 +97,18 @@ function search() {
             
             const day2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
             weatherData.list.map = () => {
-                
                 for (i = 1; i < 4; i++) {
+                    //Getting the date from each loop
                     const newDate = new Date(weatherData.list[i].dt_txt);
-                    document.getElementById(`day${i + 1}`).innerHTML = day2[newDate.getDay()];
-                    document.getElementById(`temp${i + 1}`).innerHTML = `${weatherData.list[i].main.temp.toFixed(0)}°C`;
-                    document.getElementById(`weather_icon${i + 1}`).innerHTML = weatherData.list[i].weather[0].icon;
+                    //The variable ID is day1, day2 and day3...The I serves as a link between JavaScript and Html where i represents the ID Variable
+                    document.getElementById(`day${i}`).innerHTML = day2[newDate.getDay()];
+                    //Same thing with the temperature variable
+                    document.getElementById(`temp${i}`).innerHTML = `${weatherData.list[i].main.temp.toFixed(0)}°C`;
+                    //Same thing with the temperature variable
+                    document.getElementById(`weather_icon${i}`).innerHTML = weatherData.list[i].weather[0].icon;
                 }
             }
-            weatherData = weatherData.list.map(); 
+             
         })                 
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////**
