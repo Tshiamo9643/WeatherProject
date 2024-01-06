@@ -162,26 +162,31 @@ body{
     padding-right: 0;
     margin: auto;
 }
-.day2Div{
-    width: 25%;
+.day2Div.day2Div{
+    
     border-radius: 10px;
+    gap: 10px;
+}
+.div.day3Div{
+    margin: 10px;
 }
 .day3Div{
-    width: 25%;
+    margin-left: 10px;
+    gap: 10px;
     border-radius: 10px;
 }
 .day4Div{
-    width: 25%;
+    gap: 10px;
     border-radius: 10px;
 }
 .nextWeather div{
     
     display: flex;
     max-width: 100%;
-    text-align: center;
+    margin-left: 20px;
     background-color: #045f7b;
-    /* border-radius: 10px; */
-    margin: auto;
+    border-radius: 10px;
+    /* margin: auto; */
 }
 .nextWeather h4{
     color: white;
