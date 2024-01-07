@@ -157,7 +157,7 @@ body{
     background-color: #037591;
     display: flex;
     padding: 10px;
-    padding-left: 0;  
+    padding-left: 13%;  
     border-radius: 0 0 10px 10px;
     padding-right: 0;
     margin: auto;
@@ -167,7 +167,7 @@ body{
     border-radius: 10px;
     gap: 10px;
 }
-.div.day3Div{
+.div2Div.day3Div{
     margin: 10px;
 }
 .day3Div{
